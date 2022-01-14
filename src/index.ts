@@ -6,8 +6,8 @@ class Item {
     }
 }
 
-class Test {
-    public get stuff() {
+class Test extends Item {
+    get stuff() {
         return {
             list: [
                 new Item(),
@@ -17,7 +17,7 @@ class Test {
         }
     }
 
-    public get numberStuff(): { list: Item[] } {
+    get numberStuff(): { list: Array<Item> } {
         return {
             list: [
                 new Item(),
